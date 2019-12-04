@@ -3,7 +3,14 @@ defmodule HelloWeb.WordController do
 
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    render(conn,
+      "index.html",
+      foo: [
+        "here",
+        "more",
+        "words"
+      ]
+    )
   end
 
   def new(conn, _params) do

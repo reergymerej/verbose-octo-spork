@@ -1,5 +1,11 @@
-These are the words.
+<%= for word <- get_words() do %>
+  <li>
+    <%= word %>
+  </li>
+<% end %>
 
-<%= for key <- get_words() do %>
-  <%= key %>
+<%= for word <- @foo do %>
+  <li>
+    <%= word %>
+  </li>
 <% end %>
