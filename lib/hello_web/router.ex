@@ -18,8 +18,10 @@ defmodule HelloWeb.Router do
 
     get "/", PageController, :index
     get "/hello", HelloController, :index
-    get "/world", WorldController, :index
     get "/hello/:messenger", HelloController, :show
+    get "/world", WorldController, :index
+    get "/flash-me", FlashController, :index
+    get "/flash-me/:target", FlashController, :index
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,9 @@
+<%= if !get_flash(@conn, :info) do %>
+  <p>
+    The flashed message is pulled from the <a href="/flash-me/boop">end of the url</a>.
+  </p>
+<% end %>
+
+<%= if get_flash(@conn, :info) do %>
+  <img src="http://www.freakingnews.com/pictures/65500/Susan-Boyle-Meets-a-Flasher--65720.jpg" />
+<% end %>
