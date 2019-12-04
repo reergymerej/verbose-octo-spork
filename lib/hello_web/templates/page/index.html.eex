@@ -1,14 +1,14 @@
 <section class="phx-hero">
   <h1>
-    <%= gettext "Welcome to %{name}.", name: "the banana zone" %>
+    Four Letter Words
   </h1>
-  <p>
-    Do people still use "homepage?"
-  </p>
 </section>
 
 <section class="row">
-  <p>
-    This is my site.  You may not have it.  Actually, it's web, so you can have some of it.
-  </p>
+  <section class="column">
+    <a href="/words">See the list.</a>
+  </section>
+  <section class="column">
+    <a href="/words/new">Add a new word.</a>
+  </section>
 </section>

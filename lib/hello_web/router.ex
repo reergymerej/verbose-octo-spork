@@ -22,6 +22,9 @@ defmodule HelloWeb.Router do
     get "/world", WorldController, :index
     get "/flash-me", FlashController, :index
     get "/flash-me/:target", FlashController, :index
+    resources "/users", UserController, only: [:index, :show]
+    resources "/comments", CommentController, except: [:delete]
+    resources "/words", WordController
   end
 
   # Other scopes may use custom stacks.
