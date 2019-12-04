@@ -1,1 +1,5 @@
 These are the words.
+
+<%= for key <- get_words() do %>
+  <%= key %>
+<% end %>
